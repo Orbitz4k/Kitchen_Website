@@ -68,3 +68,27 @@ footer{
 footer > a, footer a:visited{
     color: #a8ffd5;
 }
+
+/*index page stuff*/
+.indexMain{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.indexCenter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.indexSpacer{
+    width: 20%;
+}
+
+.imageIndex{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 25px;
+}
