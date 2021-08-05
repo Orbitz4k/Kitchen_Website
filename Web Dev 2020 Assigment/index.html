@@ -1,0 +1,169 @@
+<!Doctype html>
+<html>
+<head>
+    <title>//Cafe Hex</title>
+        <meta charset="utf-8">
+    
+    <style>@import 'main.css';
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400;700&family=Cormorant:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;700&display=swap');
+    </style>
+</head>
+    
+<body>
+    <main>
+        <header>
+            <div class=button onclick="openNav()">&#9776;</div>
+            <div class="logoField">  <!-- Logo area -->
+                <h1 class=logo>//Café Hex</h1>
+            </div>
+
+            
+        </header>
+        
+        <div class=heroContainer>
+            <img src="images/header.png" alt="header">
+        </div>
+        
+        <nav id="sideNav">  <!-- Navbar -->
+            
+                <p class=button onclick="closeNav()">&#9776;</p>
+                <a class="a" href="index.html">Home</a>
+                <a class="a" href="menu.html">Our Menu</a>
+                <a class="a" href="contact.html">Contact Us</a>
+                <a class="a" href="team.html">Join our Team</a>            
+            
+        </nav>
+        
+        <section class=imageParagraph> <!--About Us-->
+            <div class=imageBox><img src="images/coffeeLaptop1.jpg" alt="laptop coffee"></div>
+            
+            <div class="textBox">
+                <h1>Our Story</h1>
+                <p>We are a small cafe in the center of multiple large tech-based companies. The founder of our company previously a freelance developer and wanted to create the a comfortable environment for  freelance devs' and anyone that would like to drop in to some work done and have a nice brew.
+                <br>
+                <br>    
+                <br>
+                    "For Developers by Developers"  - Founder John Doe.</p>
+            </div>
+            
+        </section>
+        
+        <section class=dessertMenu> <!-- Desserts Display -->
+            <a href="menu.html" class=menuSmall><img src="images/desertSquare1.png" id="desert" alt="dessert"></a>  
+            
+            <a class=menuBig href="menu.html"><img src="images/dessertsCollageText.png" alt="desserts"></a>
+            
+        </section>
+        
+        
+        <section class=imageParagraph id=paragraph2> <!-- Fair trade-->
+            <div class="textBox">
+                <div class=subBox>
+                    <h1>Fair Trade</h1>
+                    <p>We have joined Fair Trade to promote human rights in developing countries.
+                    <br>
+                    <br>
+                    All of our products are ethically sourced and of the highest quality.</p>
+                </div>
+                <div class="subBox">
+                    <div class=redirectContainer><a href="https://www.fairtrade.ie/" class=redirectButton>Press to find out more</a></div>
+                </div>
+            </div>
+            
+            <div class=imageBox>
+                <img src="images/ethical.jpg" alt="coffee beans">
+            </div>
+        </section> 
+        
+        
+        <section class=newsLetter> 
+            <h1>Subscribe to our weekly newsletter:</h1>
+            <form action="mailto:hexprocessing@cafe.com" method="get" enctype="text/plain">
+                <input type="email" placeholder ="Email Address">
+                <input type="submit" value="Subscribe" name="email" class=subscribeButton>
+            </form>
+        
+        
+        </section>
+        
+        
+        
+        <footer>
+            <table>
+                <tr>
+                    <th>Nutritional Information</th>
+                    <th>Careers</th>
+                    <th>Contact us</th>
+                </tr>
+                
+                <tr>
+                    <td><a href="#">Nutrition & Allergens</a></td>
+                    <td><a href="#">Join our team</a></td>
+                    <td><a href="#">FAQ</a></td>
+                </tr>
+                
+                <tr>
+                    <td><a href="#">Detailed Nutritional Information</a></td>
+                    <td><a href="#">Career Proggression</a></td>
+                    <td><a href="#">Contact Page</a></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><a href="#">Training Programme</a></td>
+                    <td><a href="#">Press</a></td>
+                </tr>
+            </table>
+            
+            <div class=socialContainer> <!-- Social Media Links -->
+                <a href="https://www.facebook.com/"><img src="images/facebook.png"  alt="facebook"></a>
+                <a href="https://twitter.com/explore"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img src="images/insta.png" alt="instagram"></a>
+                <a href="https://www.yelp.ie/dublin"><img src="images/yelp.png" alt="yelp"></a>
+            </div>
+        
+        </footer>
+    </main>
+    
+    
+    <script>
+        function openNav() { //function for opening mobile nav
+            document.getElementById("sideNav").style.width = "40%";
+
+    }
+
+        function closeNav() { // function for closing mobile nav 
+            document.getElementById("sideNav").style.width = "0";
+
+    }
+        
+        
+     "use strict";   
+    var number = 0;    
+    var time = 3000;
+        
+        
+     let slides =document.getElementById('desert');   
+        
+    let imageArray = ['images/desertSquare1.png', 'images/desertSquare2.png', 'images/desertSquare3.png'];  //array containing images
+        
+    let slidesIndex = 0;    
+
+   function slideshow() {
+                //replace the source of the image with the contents of the array value in the index specified by slidesIndex variable (0)         
+                slides.setAttribute('src', imageArray[slidesIndex]);
+                //slides.setAttribute('width', '70%');
+                //increment the slidesIndex variable by 1         
+                slidesIndex++;
+                //when the slidesIndex variable is higher that the length of the array return to zero and start with the first slide again         
+                if(slidesIndex >= imageArray.length) {
+                    slidesIndex = 0;
+                }
+            }
+            //set the interval of how often to run the slideshow function (every 4 seconds)    
+            const interval = setInterval(slideshow, 6000);
+            
+    </script>
+</body>
+
+</html>

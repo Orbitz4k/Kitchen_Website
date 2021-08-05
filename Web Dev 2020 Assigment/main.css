@@ -1,0 +1,879 @@
+body{
+    margin: 0; /* clears default margins*/
+    padding: 0; /* clears default padding*/
+    font-family: 'source sans pro', sans-serif;
+    background-color: rgba(33, 33, 33, 1);
+    overflow-x: hidden;
+
+}
+img{display: block;} /* turns all images to block elements*/
+h1{margin: 0;}/* clears margins*/
+
+.hideme{opacity: 0;}
+/*------------------------------MOBILE WEBISTE STYLES------------------------------------*/
+
+
+/*---------------------------------Header-------------------------------*/
+header{ 
+    z-index: 3;
+    margin-top: -10%;
+    font-family: 'Caveat', serif;
+    font-size: 4vw;
+    display: flex; 
+    background-color: #f1b342;
+    text-align: start;
+    color: #6f4b38;
+    position: fixed;
+    width: 100%;
+    transition: 1s;
+}
+
+.button{
+    margin: 0;
+    float: left;
+    font-size:7vw;;
+    cursor:pointer; /*makes cursor into pointer when hovering*/
+    transition: 1s;
+    }
+
+
+header > .logoField {
+    margin-left: 69%;
+    position: absolute;
+}
+
+header > .logoField > .logo{
+    white-space: nowrap; /* prevents wrapping */
+}
+
+
+.heroContainer{
+    margin-top: 10%;
+    transition: 1s;
+}
+.heroContainer, .heroContainer > img{
+    width: 100%;
+    transition: 1s;
+}
+
+
+
+/*---menu page styles*/
+
+.menupageHeader{margin-top: 0;}
+
+
+
+
+/*---------------------------------Nav Bar-------------------------------*/  
+nav{      
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    z-index: 4;
+    position: fixed;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 0.5s;
+    background-color: #f1b342;
+    top: 0;
+    left: 0;
+    
+}
+nav > .button{color:#6f4b38;}
+nav > .a, .a:visited{
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'bitter', serif;
+    color:#6f4b38;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav > .a:active, .a:hover{
+    border-bottom: 0.5rem solid #6f4b38;
+    border-top: 0.5rem solid #6f4b38;
+    transition: 1s;
+}
+
+.logoNav{display: none;}/* Hiding nav bar logo*/
+
+
+
+
+
+/*----------------------------Mid Sections-----------------------------*/
+.imageParagraph{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: #edece7;
+    font-size: 3vw;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.imageParagraph > .imageBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.imageParagraph > .imageBox > img{
+    width: 98%;
+    opacity: 80%;
+}
+
+
+.imageParagraph > .textBox{
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
+.imageParagraph > .textBox > h1{
+    font-family: 'Bitter', serif;
+    font-size: 4vw;
+    
+}
+
+.imageParagraph > .textBox > .subBox > h1{
+    font-family: 'Bitter', serif;
+    font-size: 4vw;
+    
+}
+
+#paragraph2{ /* making second paragraph in reverse order*/
+    flex-direction: column-reverse;
+    padding-top: 0;
+}
+
+.redirectContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.redirectButton{
+    display: block;
+    width: 70%;
+    background-color: #f1b342;
+    padding: 1vw;
+    font-size: 4vw;
+    font-family: 'bitter', serif;
+    text-align: center;
+    font-weight: bold;
+    color:#6f4b38;
+    transition: 0.4s;
+}
+
+.redirectButton:hover{
+    background-color:#6f4b38;
+    color: #f1b342;
+}
+
+
+/*------Menu Page Styles-----*/    
+    /*top section*/
+    .topSection{
+        background-color: rgba(0,0,0,0.6);
+        transition: 0.7s;
+    }
+    
+    .textHeader{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 5vw;
+        transition: 0.7s;
+    }
+    
+    
+    .textHeader > h1{
+        color: #f1b342;
+        margin-top: 12%;
+        font-family: 'Caveat', serif;
+        transition: 0.7s;
+    }
+    
+    .textHeader > p{
+        margin: 0;
+        font-style: italic;
+        font-size: 4vw;
+        color: #edece7;
+        font-style: italic;
+        font-family: 'Cormorant', sans-serif;
+        text-align: center;
+        width: 40%;
+        border-top: 2px solid #edece7;
+        padding: 1vw;
+        opacity: 90%;
+        margin-bottom: 1vw;
+        transition: 0.7s;
+    }
+    
+    .topSection > .imgContainer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        transition: 0.7s;
+    }
+
+    .topSection > .imgContainer>img{
+        width: 100%;
+        display: inline-block;
+        transition: 0.7s;
+    }
+
+    .topSection > .bottomText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transition: 0.7s;
+    }
+
+    .topSection > .bottomText > p{
+        font-size: 3.3vw;
+        font-family: 'Cormorant', serif;
+        width: 80%;
+        text-align: center;
+        color: #edece7;
+        transition: 0.7s;
+    }
+
+    /*cake section*/
+    .cakeParagraph{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: 0.7s;
+    }
+
+    .cakeParagraph > .imgContainer{
+        padding-top: 3vw;
+        width: 90%;
+        transition: 0.7s;
+    }
+
+    .cakeParagraph > .imgContainer > img{
+        width: 100%;
+        transition: 0.7s;
+    }
+
+    .cakeParagraph > .cakeText{
+        width: 90%;
+        background-color: rgba(0,0,0,0.6);
+        transition: 0.7s;
+    }
+
+    .cakeParagraph > .cakeText > h1{
+        color: #f1b342;
+        font-weight: normal;
+        font-family: 'Bitter', sans-serif;
+        font-size: 4vw;
+        padding: 2vw 5vw;
+        transition: 0.7s;
+    }
+
+    .cakeParagraph > .cakeText > p{
+        color: #d9d8cf;
+        padding: 0 5vw;
+        font-size: 2vw;
+        font-family: 'Cormorant', serif;
+        transition: 0.7s;
+    }
+
+    /* food sections */
+    
+    .foodParagraphs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 2vw;
+        transition: 0.7s;
+    }
+
+    .foodParagraphs > .paragraph{
+        width: 90%;
+        transition: 0.7s;
+        
+    }
+
+    .foodParagraphs > .paragraph > img{
+        width: 100%;
+        transition: 0.7s;
+
+    }
+    .foodParagraphs > .paragraph > p{
+        color: #d9d8cf;
+        padding: 0 5vw;
+        font-size: 2vw;
+        font-family: 'Cormorant', serif;
+        transition: 0.7s;
+    }
+    .foodParagraphs > .paragraph > h1{
+        color: #f1b342;
+        font-weight: normal;
+        font-family: 'Bitter', sans-serif;
+        font-size: 4vw;
+        padding: 2vw 5vw;
+        transition: 0.7s;
+    }
+    
+
+
+    /*Contact page styles*/
+    
+    .contactContainer{
+        display: flex;
+        flex-direction: column;
+        padding:2vw;
+        background-color: rgba(0,0,0,0.6);
+        margin: 2vw 0;
+    }
+    .topOne{   
+        padding-top: 12vw;
+        margin-top: 0;
+    }
+
+
+    .contactContainer > h1{
+        font-family: 'Bitter', serif;
+        color: #f1b342;
+        font-size: 7vw;
+    }
+    .contactContainer > p{
+        color: #edece7;
+        font-size: 4vw;
+    }
+
+    .contactForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .contactForm > input, .contactForm > textarea{
+        font-size: 3vw;
+        color: #f1b342;
+        box-shadow: none;
+        border: none;
+        font-family: 'Source Sans Pro';
+        background-color: rgba(0,0,0,0.6);
+        width: 95%;
+        padding: 1vw;
+    }
+
+    .contactForm > textarea{color: #edece7}
+
+    .contactForm > input[type=submit]{
+        font-family: 'Bitter', serif;
+        font-weight: bold;
+        background-color: #f1b342;
+        color: #6f4b38;
+        width: 95%;
+    }
+
+    .contactForm > input[type=submit]:hover{
+        background-color: #6f4b38;
+        color: #f1b342;
+    }
+
+    .centerContainers{
+        align-items: center;
+    }
+
+    .contactContainer > h2{
+        color:#edece7;
+        font-family: 'Bitter', serif;
+        text-align: center;
+        width: 90%;
+    }
+    .contactContainer > h3{
+        color:#f1b342;
+        font-family: 'Bitter', serif;
+        text-align: center;
+        width: 90%;
+    }
+
+
+    /*team page styles*/
+
+.team{align-items: flex-start;}
+
+form > h2{
+    color: #f1b342;
+    font-family: 'Bitter', sans-serif;
+}
+
+
+/*---------------------------------Desserts Banner-------------------------------*/
+
+.dessertMenu{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center; /* centers content*/
+}
+
+.dessertMenu > a{ 
+    
+    padding: 0.2%;
+    width: 70%;
+    background-color: rgba(111, 75, 56, 0.49);
+    transition: 0.8s;
+}
+
+.dessertMenu > a:hover{ /* changes colour on hover*/
+    background-color: rgba(241, 179, 66, 0.59);
+}
+
+.dessertMenu > a > img{
+    width: 100%;
+}
+
+.menuBig{
+    display: none; /* Hides desktop version of Desserts banners*/
+}
+/*--------------------------News Letter Subscribe--------------------------*/    
+ 
+    
+.newsLetter{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+     margin: 10vw 0;
+}    
+    
+.newsLetter > h1{
+    color: #d9d8cf;
+    margin-bottom: 2vw;
+    font-size: 4vw;
+} 
+.newsLetter > form{
+    width: 100%;
+ }
+    
+.newsLetter > form > input{
+    margin: 0;
+    padding: 1vw;
+    border: none;
+    box-shadow: none;
+    background-color: rgba(18, 18, 18, 0.6);
+    color: #edece7;
+    font-size: 5vw;
+    font-family: 'source sans pro', serif;
+    font-weight: bold;
+}
+    
+.newsLetter > form > .subscribeButton{
+    background-color: #f1b342;
+    cursor: pointer; /* turns cursor into pointer*/
+    color: #6f4b38;
+    transition: 0.4s;
+}
+.newsLetter > form > .subscribeButton:hover{
+    background-color: rgba(111, 75, 56, 0.49);
+    color:#f1b342;
+    transition: 0.4s;
+}
+
+
+/*----------------------------------Footer--------------------------------*/
+
+footer{
+    margin-top: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+}
+
+footer > table{
+    display: none;
+}
+
+footer > .socialContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%
+}
+
+.socialContainer > a{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 13%;
+}
+
+.socialContainer > a > img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------DESKTOP STYLES---------------------------------------*/
+
+
+@media screen and (min-width: 1080px) {
+/*---------------------------------Scrollbar-------------------------------*/
+    ::-webkit-scrollbar { /* Changes Appearance of scrollbar*/
+        width: 0.3vw;
+        background: rgba(34, 34, 34, 0.94); 
+    }
+    
+    ::-webkit-scrollbar-thumb { /* changes colour of thumb*/
+    background: #363636; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #3c3c3c; 
+    }
+    
+    
+    
+    
+    
+/*---------------------------------Header-------------------------------*/
+    header{ 
+        margin: 0;
+        font-size: 1.6vw;
+        color: #f1b342;
+        position: sticky;
+        background-color: rgba(21, 21, 21, 0.81);
+    }
+
+    .button{ /*hiding the button*/
+        display: none;
+        }
+    header > .logoField {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .heroContainer{
+        margin-top: 0;
+    }
+    .heroContainer, .heroContainer > img{
+        opacity: 90%
+    }
+
+    
+/* ----Menu Page Styles*/    
+    .menupageHeader{
+        display: none;
+    }
+
+/*---------------------------------Nav Bar-------------------------------*/  
+    nav{ 
+        white-space: nowrap;
+        width: 100%;
+        position: relative;
+        position: sticky;
+        justify-content: space-around;
+        flex-direction: row;
+        transition: 0.5s;
+        background-color: rgba(0,0,0,0.6);
+        margin-bottom: 1rem;
+
+    }
+ 
+    nav > .a, .a:visited{
+        padding: 0.5rem;
+        font-size: 2vw;
+        color:#edece7;
+        transition: 1s;
+         text-decoration-color: rgba(0,0,0,0);
+    }
+
+    nav > .a:active, .a:hover{
+        border-top: 0;
+        border-bottom: 0;
+        transition: 1s;
+        text-decoration: underline;
+        text-decoration-color: #f1b342;
+        text-decoration-style: solid;
+      
+
+    }
+        
+
+
+    .logoNav{
+        display: inline-block;
+        font-weight: bold;
+        font-family: 'Caveat', serif;
+        font-size: 2.5vw;
+        color: #f1b342;
+        height: 100%;
+        margin: 0;
+    }
+/*---------------------------------Mid Sections-------------------------------*/
+    .imageParagraph{ 
+        flex-direction: row;
+        font-size: 1.3vw;
+        background-color: rgba(0,0,0,0.6);
+        justify-content: center;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .imageParagraph > .imageBox{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .imageParagraph > .imageBox > img{
+        width: 98%;
+        opacity: 80%;
+    }
+
+
+    .imageParagraph > .textBox{
+        width: 40%;
+    }
+
+    .imageParagraph > .textBox > h1{
+        font-size: 3vw;
+    }
+
+    .imageParagraph > .textBox > .subBox > h1{
+        font-size: 3vw;
+    }
+
+    #paragraph2{
+        flex-direction: row;
+        padding-top: 1rem;;
+    }
+
+    .redirectContainer{
+        padding-top: 3.5vw;
+    }
+
+    .redirectButton, .redirectButton:visited{
+        width: 100%;
+        font-size: 2vw;
+        transition: 0.4s;
+    }
+
+    .redirectButton:hover, .redirectButton:active{ /* changes colour on hover and active*/
+        background-color:rgba(111, 75, 56, 0.4);
+    }
+    
+    
+/*------Menu Page Styles-----*/    
+    /*top section*/
+    .topSection{
+        background-color: rgba(0,0,0,0.6);
+    }
+    
+    .textHeader{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    
+    .textHeader > h1{
+        margin-top: 0%;
+        font-size: 3vw;
+    }
+    
+    .textHeader > p{
+        margin: 0;
+        font-size: 2vw;
+        width: 17%;
+        border-top: 2px solid #edece7;
+        padding: 0;
+        opacity: 90%;
+        margin-bottom: 1vw;
+    }
+    
+
+    .topSection > .bottomText > p{
+        font-size: 1.5vw;
+        width: 80%;
+    }
+
+    /*cake section*/
+    
+    .cakeParagraph > .imgContainer{
+        padding-top: 2vw;
+        width: 60%;
+    }
+
+    .cakeParagraph > .imgContainer > img{
+        width: 100%;
+    }
+
+    .cakeParagraph > .cakeText{
+        width: 60%;
+    }
+
+    .cakeParagraph > .cakeText > h1{
+        font-size: 3vw;
+        padding: 2vw 5vw;
+    }
+
+    .cakeParagraph > .cakeText > p{
+        padding: 0 5vw;
+        font-size: 1.5vw;
+
+    }
+
+    /* food sections */
+    
+    .foodParagraphs{
+        width: 100%;
+        margin-top: 2vw;
+    }
+
+    .foodParagraphs > .paragraph{
+        width: 60%;
+        margin-bottom: 2vw;
+    }
+
+    .foodParagraphs > .paragraph > img{
+        width: 100%;
+
+    }
+    .foodParagraphs > .paragraph > p{
+        padding: 0 5vw;
+        font-size: 2vw;
+    }
+    .foodParagraphs > .paragraph > h1{
+        font-size: 4vw;
+        padding: 2vw 5vw;
+    }
+
+    /*Contact page styles*/
+    
+  .contactContainer{
+        padding:2vw;
+        margin: 2vw 0;
+    }
+
+    .contactContainer > h1{
+        font-size: 3vw;
+    }
+    .contactContainer > p{
+        font-size: 1.8vw;
+    }
+
+    .contactForm > input, .contactForm > textarea{
+        font-size: 2vw;
+        width: 65%;
+        padding: 1vw;
+    }
+
+
+
+    .contactContainer > h2{
+        width: 90%;
+    }
+    .contactContainer > h3{
+        width: 90%;
+    }
+    
+/*-------------------------------Desserts Banner-------------------------------*/ 
+    .menuSmall{ /* hides mobile banner*/
+        display: none;
+    }
+    
+    
+    .menuBig{ /*makes it visible again*/
+        display: block;
+    }
+    
+    
+/*--------------------------News Letter Subscribe--------------------------*/    
+ 
+
+    .newsLetter{
+         margin: 3vw 0;
+    }    
+
+    .newsLetter > h1{
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    } 
+
+    .newsLetter > form > input{
+        padding: 0.5vw;
+        font-size: 2vw;
+    }
+    
+    
+/*---------------------------------Footer-------------------------------*/ 
+
+  
+    
+    footer > table{
+        display: block;
+        margin: 0.7vw;
+        font-size: 1vw;
+    }   
+    
+    th{
+        text-align: left;
+        color: #f1b342;
+        font-weight: bold;
+    }
+    
+    td,th {
+        padding: 0.3vw;
+    }
+    
+    td > a, td >a:visited{
+        color: #edece7;
+        text-decoration: black none;
+        transition: 0.7s;
+    }
+    
+    td > a:hover, td >a:active{
+        text-decoration: underline;
+        text-decoration-color: #f1b342;
+        transition: 0.7s;
+        
+    }
+    
+    footer > .socialContainer{
+        width: 20%;
+        margin-left: 48%;
+        align-items: flex-end;
+    }
+    
+     
+    
+}
