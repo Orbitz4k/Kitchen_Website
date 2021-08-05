@@ -4,7 +4,6 @@
 	border: none;
 	box-sizing: border-box;
 	font-family: Verdana, serif;
-	background-image: url('/public/images/blur.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -13,7 +12,7 @@
 /*header stuff*/
 .header {
 	overflow: hidden;
-	background-color: rgba(207, 207, 207, 5);
+	background-color: rgba(150, 150, 150, 0.6);
 	padding: 20px 10px;
 }
 
@@ -76,7 +75,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 12px;
-	background-color: rgba(207, 207, 207, 5);
+	background-color: rgba(150, 150, 150, 0.6);
 	text-decoration: none;
 }
 
