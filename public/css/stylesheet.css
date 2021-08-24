@@ -12,7 +12,7 @@
 /*header stuff*/
 .header {
 	overflow: hidden;
-	background-color: rgba(150, 150, 150, 0.6);
+	background-color: rgba(248, 243, 241, 0.5);
 	padding: 20px 10px;
 }
 
@@ -75,7 +75,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 12px;
-	background-color: rgba(150, 150, 150, 0.6);
+	background-color: rgba(248, 243, 241, 0.5);
 	text-decoration: none;
 }
 
