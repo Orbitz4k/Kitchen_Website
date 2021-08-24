@@ -180,7 +180,7 @@ footer a:visited {
 
 
 .slider{
-  width: 500px;
+  width: 100%;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
@@ -210,7 +210,7 @@ footer a:visited {
 
 .navigation-manual{
   position: absolute;
-  width: 800px;
+  width: 50%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -253,7 +253,7 @@ footer a:visited {
 .navigation-auto{
   position: absolute;
   display: flex;
-  width: 800px;
+  width: 50%;
   justify-content: center;
   margin-top: 460px;
 }
