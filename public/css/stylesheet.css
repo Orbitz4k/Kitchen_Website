@@ -88,8 +88,9 @@ footer a:visited {
 .indexMain {
 	display: flex;
 	width: 100%;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .indexCenter {
@@ -103,7 +104,9 @@ footer a:visited {
 	width: 50%;
 }
 
-
+.about{
+	padding: 0 20vw 0 20vw;
+}
 
 
 
