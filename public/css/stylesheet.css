@@ -12,11 +12,13 @@
 /*header stuff*/
 .header {
 	overflow: hidden;
-	background-color: rgba(248, 243, 241);
+
 	padding: 20px 10px;
 }
 
-
+.headfootClr{
+    background-color: #fff6f0;
+}
 
 .header a {
 	float: left;
@@ -75,7 +77,6 @@ footer {
 	bottom: 0;
 	width: 100%;
 	padding: 12px;
-	background-color: rgba(248, 243, 241);
 	text-decoration: none;
 }
 
