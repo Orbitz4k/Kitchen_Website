@@ -14,14 +14,14 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         UserFactory::createOne([
-            'username' => 'matt',
-            'password' => 'smith',
+            'username' => 'Joe',
+            'password' => '12345',
             'role' => 'ROLE_ADMIN'
         ]);
 
         UserFactory::createOne([
-            'username' => 'john',
-            'password' => 'doe',
+            'username' => 'Paul',
+            'password' => '12345',
             'role' => 'ROLE_ADMIN'
         ]);
 
