@@ -230,7 +230,7 @@ a {
 }
 
 a:hover {
-    color: #cba72b
+    color: #00B359
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3550,7 +3550,7 @@ textarea.form-control-lg {
 }
 
 .btn-link:hover {
-    color: #cba72b
+    color: #00B359
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -4881,7 +4881,7 @@ textarea.form-control-lg {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #e5bc31;
+    color: #00B359;
     background-color: #fffaeb;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125)
 }
@@ -5031,14 +5031,14 @@ textarea.form-control-lg {
 
 .page-link:hover {
     z-index: 2;
-    color: #cba72b;
+    color: #00B359;
     background-color: #e9ecef;
     border-color: #dee2e6
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #cba72b;
+    color: #00B359;
     background-color: #e9ecef;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(254, 209, 54, .25)
@@ -5708,7 +5708,7 @@ textarea.form-control-lg {
 
 .btn-close:focus {
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(254, 209, 54, .25);
+    box-shadow: 0 0 0 .25rem rgba(0, 179, 89, .25);
     opacity: 1
 }
 
@@ -11692,7 +11692,7 @@ textarea.form-control-lg {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #e5bc31
+    color: #00FF80
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -12279,7 +12279,7 @@ a {
 }
 
 a:hover {
-    color: #fec503
+    color: #00FF80
 }
 
 .text-primary {
@@ -12336,13 +12336,13 @@ section h3.section-subheading, section .section-subheading.h3 {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+    background-color: #00B359 !important;
+    border-color: #00B359 !important;
     color: #fff
 }
 
 .btn-primary:active, .btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(254, 209, 55, .5) !important
+    box-shadow: 0 0 0 .2rem rgba(0, 179, 89, .5) !important
 }
 
 ::-moz-selection {
